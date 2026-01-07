@@ -19,3 +19,16 @@ print(df.describe())
 # Check missing values
 print(df.isna().sum())
 
+# Compare Work Related Hours with Stress Levels
+plt.figure(figsize=(10, 6))
+sns.scatterplot(data = df, x='work_related_hours', y='stress_level')
+plt.title('Work Related Hours vs Stress Levels')
+plt.xlabel('Work Related Hours')
+plt.ylabel('Stress Levels')
+plt.show()
+
+# Compare Daily Screen Time Hours with Sleep hours
+plt.figure(figsize=(10,6))
+sns.scatterplot(data = df, x='daily_screen_time_hours', y='sleep_duration_hours')
+plt.title('Daily Screen Time Hours vs Sleep Duration Hours')
+plt.xlabel('Daily Screen Time Hours')
