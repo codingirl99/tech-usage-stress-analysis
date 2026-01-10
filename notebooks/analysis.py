@@ -54,3 +54,7 @@ plt.ylabel('Uses Wellness Apps')
 plt.show()
 
 # Compare Gaming Hours with weekly axiety score
+joint_plot = sns.jointplot(x="gaming_hours", y="weekly_anxiety_score", data=df, kind="reg")
+plt.xlabel('Gaming Hours')
+plt.ylabel('Weekly Axiety Score')
+plt.show()
