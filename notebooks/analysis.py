@@ -42,3 +42,15 @@ plt.title('Social Media Hours vs Mood Rating')
 plt.xlabel('Social Media Hours')
 plt.ylabel('Mood Rating')
 plt.show()
+
+# Compare gender with uses_wellness_apps
+plt.figure(figsize=(10,6))
+count_plot = sns.countplot(x="gender", hue="uses_wellness_apps", data=df)
+count_plot.bar_label(count_plot.containers[0])
+count_plot.bar_label(count_plot.containers[1])
+plt.title('Which Gender uses wellness apps more?')
+plt.xlabel('Gender')
+plt.ylabel('Uses Wellness Apps')
+plt.show()
+
+# Compare Gaming Hours with weekly axiety score
