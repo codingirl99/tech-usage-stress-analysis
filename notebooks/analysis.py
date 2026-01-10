@@ -32,3 +32,13 @@ plt.figure(figsize=(10,6))
 sns.scatterplot(data = df, x='daily_screen_time_hours', y='sleep_duration_hours')
 plt.title('Daily Screen Time Hours vs Sleep Duration Hours')
 plt.xlabel('Daily Screen Time Hours')
+plt.ylabel('Sleep Duration Hours')
+plt.show()
+
+# Compare Social Media Hours with Mood rating
+plt.figure(figsize=(10,6))
+sns.histplot(data=df, x="social_media_hours", kde=True)
+plt.title('Social Media Hours vs Mood Rating')
+plt.xlabel('Social Media Hours')
+plt.ylabel('Mood Rating')
+plt.show()
