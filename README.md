@@ -2,7 +2,11 @@
 
 Using Python and the dataset named Tech Use & Stress Wellness by Nagpal Prabhavalkar posted on Kaggle.com, I have done an analysis on the data in Python using pandas and seaborn libraries.
 
-Below are some insights that are gathered from the project:
+## Technologies Used
+* Python
+
+
+## Insights:
 
 1) Work Related Hours vs Stress Levels (Scatter Plot):
   > Insights: Based on the scatter plot, lower working hours shows lower stress levels (less than 2 on a scale of 1 to 10) while people who work more hours, have higher stress levels.
@@ -14,3 +18,5 @@ Below are some insights that are gathered from the project:
   > Insights: Based on the count plot, we can see somewhat that more men than women seem to be using wellness apps, with also another gender category also mentioned named "Other" which has significantly lower numbers compared to men and women genders mentioned on the plot. However, based on the plot, we also see that more men than women also do NOT use wellness apps too, an observation to be noted.
 5) Gaming Hours vs Weekly Anxiety Score (Joint Plot):
   > Insights: Based on the joint plot, we can see that surprisingly, the weekly anxiety score decreasing as the number of gaming hours increases with the exception of some outliers. The histograms for each variable are also displayed on the plot. Gaming hours has a slight right skew while weekly anxiety score has a slight left skew. 
+
+# Visualizations
