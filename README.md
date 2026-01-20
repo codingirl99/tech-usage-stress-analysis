@@ -20,3 +20,8 @@ Using Python and the dataset named Tech Use & Stress Wellness by Nagpal Prabhava
   > Insights: Based on the joint plot, we can see that surprisingly, the weekly anxiety score decreasing as the number of gaming hours increases with the exception of some outliers. The histograms for each variable are also displayed on the plot. Gaming hours has a slight right skew while weekly anxiety score has a slight left skew. 
 
 # Visualizations
+<!---[Data Visualizations](/assets/datavisualizations.png)--->
+<figure>
+<img src="/assets/datavisualizations.png" alt="Data Visualizations">
+<figcaption> </figcaption>
+</figure>
