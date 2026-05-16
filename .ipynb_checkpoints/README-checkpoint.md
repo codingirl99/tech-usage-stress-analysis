@@ -23,7 +23,7 @@ This project investigates patterns and relationships between technology usage (s
 
 Below are the combined visualizations generated from the dataset:
 
-![Visualizations](datavisualizations.png)
+![visualizations](datavisualizations.png)
 
 ---
 
