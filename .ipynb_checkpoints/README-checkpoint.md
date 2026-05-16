@@ -1,27 +1,80 @@
-# Tech-Usage-and-Impact-on-Stress-Analysis-
+# Tech-Usage-and-Impact-on-Stress-Analysis
 
-Using Python and the dataset named Tech Use & Stress Wellness by Nagpal Prabhavalkar posted on Kaggle.com, I have done an analysis on the data in Python using pandas and seaborn libraries.
+**One-Sentence Summary**  
+This project explores how technology usage, wellness habits, and work patterns relate to stress, sleep, and mood using Python on a Kaggle dataset.  
+
+---
+
+## Overview
+This project investigates patterns and relationships between technology usage (screen time, social media, and gaming), wellness app usage, work hours, and mental health indicators such as stress, sleep, mood, and anxiety. Using the dataset [Tech Use & Stress Wellness](https://www.kaggle.com/datasets/nagpalprabhavalkar/tech-use-and-stress-wellness) by Nagpal Prabhavalkar, the analysis performs **exploratory data analysis (EDA)** and visualizations to uncover trends, correlations, and insights about how technology impacts well-being.  
+
+---
+
+## Summary of Work Done
+
+### Data Exploration
+- **Type:** Tabular dataset (CSV file)  
+- **Features:** Work hours, daily screen time, social media hours, gaming hours, sleep duration, mood rating, weekly anxiety score, wellness app usage, gender, age  
+- **Size:** ~700–1,000 rows  
+- **Focus:** Identifying trends and correlations between technology use, stress, sleep, mood, and wellness habits  
+
+### Visualizations and Key Insights
+1. **Work Related Hours vs Stress Levels (Scatter Plot)**  
+   - Lower work hours correlate with lower stress levels (<2/10).  
+   - Higher work hours show increasing stress levels.  
+
+2. **Daily Screen Time Hours vs Sleep Duration (Scatter Plot)**  
+   - Most participants spend 3–8 hours on screens daily.  
+   - Higher screen time is associated with slightly reduced sleep (6.3–8.3 hours).  
+   - Very low screen time (<2.3 hours) corresponds to more sleep.  
+
+3. **Social Media Hours vs Mood Rating (Histogram)**  
+   - Mood rating tends to increase with higher social media usage.  
+   - Distribution is left-skewed, suggesting more people report higher mood ratings with more social media hours.  
+
+4. **Gender vs Wellness App Usage (Count Plot)**  
+   - More men than women use wellness apps, though both genders have a significant proportion not using them.  
+   - "Other" gender category has significantly lower representation.  
+
+5. **Gaming Hours vs Weekly Anxiety Score (Joint Plot)**  
+   - Weekly anxiety score slightly decreases as gaming hours increase, with some outliers.  
+   - Gaming hours show a slight right skew; anxiety scores show a slight left skew.  
+
+---
 
 ## Technologies Used
-* Python
+- Python  
+- Libraries: pandas, seaborn, matplotlib  
+- Analysis performed in **Jupyter Notebook**  
 
+---
 
-## Insights:
+## Visualizations
+All visualizations are combined into a single file:  
+- `visualizations.png`  
 
-1) Work Related Hours vs Stress Levels (Scatter Plot):
-  > Insights: Based on the scatter plot, lower working hours shows lower stress levels (less than 2 on a scale of 1 to 10) while people who work more hours, have higher stress levels.
-2) Daily Screen Time Hours vs Sleep Duration Hours (Scatter Plot):
-  > Insights: Based on the scatter plot, we can see that a bulk of the data is within the intervals 3 to 8 for Daily Screen Time Hours with many more other data points being spread out. People who spend more time on their devices seem to get less sleep. Those who spend between 3 to 8 hours of Daily Screen time get about 6.3 to 8.3 hours of sleep and people who spend less than 2.3 hours seem to get more sleep. However, since the data is scattered and drifted, it may be hard to pinpoint these exact trends. 
-3) Social Media Hours vs Mood Rating (Histogram Plot):
-  > Insights: Based on the histogram plot, we can see that the trend of data seems be left skewed. The data tells us that if a person spends several hours on social media, their mood rating is shown to be significantly high. The mood rating increases as the number of hours spent on social media increases.
-4) Gender vs Uses Wellness Apps (Count Plot):
-  > Insights: Based on the count plot, we can see somewhat that more men than women seem to be using wellness apps, with also another gender category also mentioned named "Other" which has significantly lower numbers compared to men and women genders mentioned on the plot. However, based on the plot, we also see that more men than women also do NOT use wellness apps too, an observation to be noted.
-5) Gaming Hours vs Weekly Anxiety Score (Joint Plot):
-  > Insights: Based on the joint plot, we can see that surprisingly, the weekly anxiety score decreasing as the number of gaming hours increases with the exception of some outliers. The histograms for each variable are also displayed on the plot. Gaming hours has a slight right skew while weekly anxiety score has a slight left skew. 
+---
 
-# Visualizations
-<!---[Data Visualizations](/assets/datavisualizations.png)--->
-<figure>
-<img src="/assets/datavisualizations.png" alt="Data Visualizations">
-<figcaption> </figcaption>
-</figure>
+## Conclusions
+- Work hours and screen time are positively correlated with stress and negatively correlated with sleep.  
+- Social media usage may be associated with higher self-reported mood ratings.  
+- Gaming may have a small reducing effect on weekly anxiety scores.  
+- Wellness app usage differs across genders, but non-usage is common for all.  
+
+---
+
+## Future Directions
+- Apply statistical tests (correlation, regression) to quantify relationships  
+- Explore interactive visualizations with dashboards (Plotly/Dash, Streamlit)  
+- Segment analysis by demographics (age, occupation)  
+- Investigate longitudinal or temporal effects if time-based data is available  
+
+---
+
+## How to Reproduce Results
+1. Clone the repository  
+2. Download the dataset from Kaggle: [Tech Use & Stress Wellness](https://www.kaggle.com/datasets/nagpalprabhavalkar/tech-use-and-stress-wellness)  
+3. Place the dataset in the `/data` folder  
+4. Install dependencies:  
+   ```bash
+   pip install pandas seaborn matplotlib jupyter
