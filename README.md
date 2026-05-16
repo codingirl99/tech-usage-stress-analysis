@@ -1,4 +1,4 @@
-# Tech-Usage-and-Impact-on-Stress-Analysis
+# tech-usage-stress-analysis
 
 **One-Sentence Summary**  
 This project explores how technology usage, wellness habits, and work patterns relate to stress, sleep, and mood using Python on a Kaggle dataset.  
