@@ -8,17 +8,26 @@ This project explores how technology usage, wellness habits, and work patterns r
 ## Overview
 This project investigates patterns and relationships between technology usage (screen time, social media, and gaming), wellness app usage, work hours, and mental health indicators such as stress, sleep, mood, and anxiety. Using the dataset [Tech Use & Stress Wellness](https://www.kaggle.com/datasets/nagpalprabhavalkar/tech-use-and-stress-wellness) by Nagpal Prabhavalkar, the analysis performs **exploratory data analysis (EDA)** and visualizations to uncover trends, correlations, and insights about how technology impacts well-being.  
 
+**Note:** All insights in this project are based on the original dataset.  
+
 ---
 
-## Summary of Work Done
+## Technologies Used
+- Python  
+- Libraries: pandas, seaborn, matplotlib  
+- Analysis performed in **Jupyter Notebook**  
 
-### Data Exploration
-- **Type:** Tabular dataset (CSV file)  
-- **Features:** Work hours, daily screen time, social media hours, gaming hours, sleep duration, mood rating, weekly anxiety score, wellness app usage, gender, age  
-- **Size:** ~700–1,000 rows  
-- **Focus:** Identifying trends and correlations between technology use, stress, sleep, mood, and wellness habits  
+---
 
-### Visualizations and Key Insights
+## Visualizations
+
+Below are the combined visualizations generated from the dataset:
+
+![Visualizations](visualizations.png)
+
+---
+
+## Visualizations and Key Insights
 1. **Work Related Hours vs Stress Levels (Scatter Plot)**  
    - Lower work hours correlate with lower stress levels (<2/10).  
    - Higher work hours show increasing stress levels.  
@@ -39,19 +48,6 @@ This project investigates patterns and relationships between technology usage (s
 5. **Gaming Hours vs Weekly Anxiety Score (Joint Plot)**  
    - Weekly anxiety score slightly decreases as gaming hours increase, with some outliers.  
    - Gaming hours show a slight right skew; anxiety scores show a slight left skew.  
-
----
-
-## Technologies Used
-- Python  
-- Libraries: pandas, seaborn, matplotlib  
-- Analysis performed in **Jupyter Notebook**  
-
----
-
-## Visualizations
-All visualizations are combined into a single file:  
-- `visualizations.png`  
 
 ---
 
